@@ -11,6 +11,32 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://newcss.net/_assets/og.png">
     <link rel="stylesheet" href="https://nacha.sh/new.css">
+    <style>
+        #popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        #popup img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        #close-popup {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -61,10 +87,9 @@
 
     <p>Furthermore, the ethical considerations surrounding the revival of Doxbin cannot be overlooked. The platform's history is marred by instances of abuse, and its return could signal a troubling trend in the online community. As we continue this investigation, we aim to shed light on these issues and hold those responsible accountable.</p>
 
-
     <h2>Who Kayte Used to Be: Rootmeskid</h2>
 
-    <p>Before adopting the identity of KT/Kayte, this individual was known as Rootmeskid.
+    <p>Before adopting the identity of KT/Kayte, this individual was known as Rootmeskid.</p>
     <p>Here are some images related to Kayte's past:</p>
 
     <span class="image-container" onclick="openPopup('https://r2.interrupted.me/F/yr580SaS.png')"><img src="https://r2.interrupted.me/F/yr580SaS.png" alt="KT's Face" style="width: 100px;"></span>
@@ -77,7 +102,6 @@
 
     <span class="image-container" onclick="openPopup('https://r2.interrupted.me/F/orTpGuLw.png')"><img src="https://r2.interrupted.me/F/orTpGuLw.png" alt="KT's Old Profile" style="width: 100px;"></span>
 
-
     <h2>Conclusion</h2>
     <p>This investigation into KT/Kayte, now known as Poorskid, is ongoing. The connections to Doxbin and the history surrounding it are complex and require further exploration. As more information becomes available, updates will be provided. Our focus remains on the implications of their actions rather than on identifying individuals or shutting down platforms.</p>
 
@@ -88,22 +112,20 @@
     <p>Ryan's Discord: <b>@lizardpatrol</b></p>
     <br>
     <img src="https://hurtingmyself.github.io/kt/assets/kapi.png" alt="Kapi">
+    <div id="popup" onclick="closePopup()">
+        <span id="close-popup">&times;</span>
+        <img id="popup-img" src="" alt="Enlarged Image">
+    </div>
+
     <script>
-
         function openPopup(src) {
-
             document.getElementById('popup-img').src = src;
-
             document.getElementById('popup').style.display = 'flex';
-
         }
 
         function closePopup() {
-
             document.getElementById('popup').style.display = 'none';
-
         }
-
     </script>
 </body>
 </html>
